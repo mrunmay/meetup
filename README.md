@@ -1,4 +1,4 @@
-# Conference Room Booking API
+# Conference Room Booking API[![Java CI with Maven](https://github.com/mrunmay/meetup/actions/workflows/maven.yml/badge.svg)](https://github.com/mrunmay/meetup/actions/workflows/maven.yml)
 
 This application exposes REST API  for booking conference rooms within the organization. The API allows users to book conference rooms for a specific time and number of people. It also provides a way to check the availability of rooms within a specified time range.
 
@@ -100,6 +100,11 @@ curl --location 'localhost:8080/api/rooms/book' \
 ```shell
 curl --location 'localhost:8080/api/rooms/availability?startTime=11:00&endTime=12:30'
 ```
+
+### Deployment
+
+The deployment process is automated through a GitHub Actions workflow, which builds a runnable "Fat JAR" of the application.
+
 
 ## Conclusion
 
