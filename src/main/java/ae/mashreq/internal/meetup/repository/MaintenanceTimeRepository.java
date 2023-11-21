@@ -13,6 +13,6 @@ public interface MaintenanceTimeRepository extends JpaRepository<MaintenanceTime
     @Query("SELECT m FROM MaintenanceTime m " +
             "WHERE :startTime < m.endTime " +
             "AND :endTime > m.startTime")
-    List<MaintenanceTime> findMaintenanceTimesByRoomAndTimeRange(@Param("startTime") LocalTime startTime,
-                                                                 @Param("endTime") LocalTime endTime);
+    List<MaintenanceTime> findMaintenanceTimesByTimeRange(@Param("startTime") LocalTime startTime,
+                                                          @Param("endTime") LocalTime endTime);
 }

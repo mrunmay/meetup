@@ -89,7 +89,7 @@ public class BookingServiceImpl implements BookingService {
     }
 
     public boolean isBookingDuringMaintenance(LocalTime startTime, LocalTime endTime) {
-        List<MaintenanceTime> maintenanceTimes = maintenanceTimeRepository.findMaintenanceTimesByRoomAndTimeRange(startTime, endTime);
+        List<MaintenanceTime> maintenanceTimes = maintenanceTimeRepository.findMaintenanceTimesByTimeRange(startTime, endTime);
         return !maintenanceTimes.isEmpty();
     }
 }

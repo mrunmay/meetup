@@ -12,7 +12,7 @@ VALUES (1, 3, 'Amaze'),
        (3, 12, 'Inspire'),
        (4, 20, 'Strive');
 
--- Insert Maintenance Times for Room 'Amaze'
+-- Insert Maintenance Times
 INSERT INTO maintenance_time (start_time, end_time)
 VALUES ('09:00:00', '09:15:00'),
        ('13:00:00', '13:15:00'),
